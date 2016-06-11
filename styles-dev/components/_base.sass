@@ -1,0 +1,80 @@
+// ----------------------------------------------------------------------
+// General styles
+// ----------------------------------------------------------------------
+*,
+*:after,
+*:before
+    box-sizing: border-box
+
+::selection
+    background: $cBlue
+    color: #fff
+    text-shadow: none
+    
+// ::-webkit-scrollbar-track
+//     background: transparent
+    
+// ::-webkit-scrollbar
+//     width: 12px
+
+// ::-webkit-scrollbar-thumb
+//     background-color: $cGreen
+//     cursor: pointer 
+
+// placeholder
+::-webkit-input-placeholder
+    color: #8e8e8e
+
+::-ms-input-placeholder
+    color: #8e8e8e
+
+::-moz-placeholder
+    color: #8e8e8e
+    opacity: 1
+
+::-moz-placeholder
+    color: #8e8e8e
+    opacity: 1
+
+
+
+html,
+body
+    min-height: 100%
+    color: $cText
+    font-size: 14px
+    line-height: 23px  
+    font-family: $fontName, arial
+    background: #797979 
+           
+
+INPUT,
+BUTTON
+    outline: none 
+    
+    &:focus
+        outline: none 
+        
+svg
+    overflow: visible
+        
+.page-inner
+    padding: 0 10px 
+    
+.p-inner
+    padding: 0 10px
+    max-width: 1280px  
+    margin: 0 auto 
+    
+
+.page
+    min-height: 100vh 
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    
+    &-content
+        flex: 1 
+        
+    html.ie &
+        display: block

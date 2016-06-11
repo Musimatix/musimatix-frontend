@@ -1,0 +1,84 @@
+.page--home
+
+    .page-content
+
+.first-screen
+    height: 100vh 
+    // min-height: 700px 
+    margin: -60px 0 0 0
+    padding: 130px 0 120px 0 
+    background-size: cover
+    background-position: center center  
+    display: flex
+    align-items: center
+    position: relative
+    color: #FFF
+    
+    +max-screen($screenXXS)
+        height: auto 
+    
+    +max-screenH(500px)
+        height: auto 
+        
+    .p-inner
+        max-width: 610px 
+        text-align: center
+        
+    &__title
+        font-size: 50px
+        line-height: 54px
+        font-weight: 500
+        margin: 0 0 37px 0    
+        
+        +max-screen($screenXXS)
+            font-size: 36px
+            line-height: 38px
+        
+    &__desc
+        color: #72cbff
+        font-weight: 300 
+        margin: 0 auto 84px auto
+        line-height: 18px  
+        max-width: 340px  
+        
+        +max-screen($screenXXS)
+            margin-bottom: 30px 
+            
+        +max-screenH(680px)
+            margin-bottom: 60px 
+    
+    &__search
+        margin: 0 0 105px 0
+        
+        +max-screen($screenXXS)
+            margin-bottom: 30px
+            
+        +max-screenH(680px)
+            margin-bottom: 60px
+         
+        .form-row__input
+            text-align: left
+            color: $cText
+            background: rgba(255, 255, 255, 0.9)
+            
+            &:focus
+                background: #fff 
+            
+    &__btns
+        color: #72cbff
+        margin-left: -20px
+         
+        .btn
+            &--big
+                color: #fff 
+                font-size: 16px 
+                font-weight: 300 
+                margin-left: 20px 
+                padding: 6px 15px 7px 
+                
+    .btn-scroll 
+        position: absolute
+        bottom: 45px
+        left: 0
+        width: 100%   
+        

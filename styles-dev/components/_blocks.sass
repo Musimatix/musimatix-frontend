@@ -1,0 +1,648 @@
+.cols
+    display: flex
+    flex-wrap: wrap 
+    -webkit-flex-wrap: wrap
+    
+    +max-screen($screenM)
+        flex-direction: column 
+
+    &--two
+        align-items: flex-start
+        
+        .col-one
+            width: 48.7804%
+            margin-right: 2.325581%
+            
+            +max-screen($screenM)
+                width: 100%
+                margin-right: 0
+
+            &:nth-child(2n)
+                margin-right: 0 
+    
+.col-one
+    width: 100% 
+
+.logo
+    img,
+    svg
+        width: 100% 
+        overflow: visible
+        
+    &--header
+        width: 132px
+        height: 100% 
+        display: block
+        
+    &--footer
+        width: 176px 
+        display: block
+        
+    &:hover
+        .logo-icon
+            fill: #22C509
+            transform: scale(1.1) 
+        
+    &-icon
+        transform-origin: 50% 50%
+        transition: fill $t300, transform $t300
+
+        
+.song
+    background: #FFF
+    color: $cText 
+    border-radius: $bRadMain
+      
+    
+    &--item
+        transition: box-shadow $t300 
+        
+        &:hover
+            box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.19) 
+            
+        .song__content
+            overflow: hidden 
+            position: relative
+            user-select: none
+            min-height: 260px 
+            max-height: 260px 
+            cursor: pointer
+            transition: max-height $t600 
+            
+            &._active
+                // height: 100%
+                max-height: 2000px
+                
+                &:before,
+                &:after
+                    opacity: 0
+                    visibility: hidden 
+                    
+            &:before,
+            &:after
+                opacity: 1
+                visibility: visible 
+                transition: opacity $t600, visibility $t600     
+            
+            &:before
+                content: ''
+                position: absolute
+                left: 0
+                bottom: 0  
+                height: 80%
+                width: 100%  
+                background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.59) 46%,rgba(255,255,255,0.61) 48%,rgba(255,255,255,1) 100%) 
+            
+            &:after
+                content: ''
+                position: absolute
+                left: 50%
+                margin-left: -11px 
+                bottom: 27px
+                width: 22px  
+                height: 5px
+                background: url(../images/dots.svg) 
+
+    
+    &__head
+        padding: 14px $smallPad 13px $smallPad 
+        border-bottom: 1px dotted #c5c5c5
+        min-height: 103px 
+        display: flex
+        flex-direction: column
+        justify-content: center
+        
+    &__title
+        font-size: 17px
+        line-height: 25px  
+        margin: 0 0 2px 0
+        font-weight: 400 
+    
+    &__subtitle
+        color: $cGreen
+        margin: 0 
+        
+        a
+            color: $cGreen
+            text-decoration: none 
+            border-bottom: 1px solid transparent 
+            transition: border-color $t150
+            
+            &:hover
+                border-color: rgba(24, 179, 0, 0.5)
+        
+    &__content
+        padding: 16px $smallPad 30px
+    
+    &__text
+        margin: 0 0 14px 0 
+
+        &:last-child
+            margin-bottom: 0 
+            
+        & > span
+            display: block
+            
+        i
+            font-style: normal
+            color: $cBlue  
+            
+    &__footer
+        border-radius: 0 0 $bRadMain $bRadMain
+        background: #eaeaea 
+        padding: $xsPad
+        display: flex
+        flex-wrap: wrap 
+        
+        &:empty
+            padding: 0 
+            
+        & > span
+            margin-right: 5px
+            position: relative
+            text-transform: capitalize
+            
+            &:last-child
+                &:after
+                    display: none
+            
+            &:after
+                content: ', '
+                position: relative 
+            
+        .btn--green
+            margin-right: 10px
+            margin-bottom: 10px 
+            
+            &:last-child
+                margin-right: 0 
+                
+.page-nav
+    display: flex
+    background: $cGreen 
+    min-height: 60px 
+    align-items: center
+    padding: $xsPad $smallPad
+    
+    &__btn
+        color: #FFF 
+        background: none
+        padding: 0
+        border: none
+        
+        .iconic
+            color: #fff
+            margin: 0px 10px 0 0
+            font-size: 12px 
+            
+            &:after
+                top: 1px 
+                
+.song-specs
+    
+.song-spec
+    margin-bottom: 23px
+    
+    &:last-child
+        margin-bottom: 0
+
+    &__label
+        margin: 0 0 3px 0
+        font-size: 10px
+        line-height: 12px
+        font-weight: 400 
+        color: #818080
+        text-transform: uppercase
+    
+    &__value
+        font-size: 17px 
+        
+        .btn
+            margin-right: 5px
+            
+            &:last-child
+                margin-right: 0 
+                
+        
+
+.form-row
+    &__input
+        padding: 11px 15px
+        border-radius: $bRadMain
+        background: rgba(255, 255, 255, 0.6) 
+        border: none 
+        font-size: 16px
+        font-weight: 300  
+        width: 100% 
+        transition: background $t150, color $t150
+        
+        &:focus
+            background: #fff  
+        
+
+.search-input
+    position: relative
+
+    &:hover
+        .search-input__field
+            background: #fff 
+            
+    &__inner
+        position: relative
+        z-index: 10 
+        
+    &__icon
+        background: transparent
+        border: none
+        padding: 5px 
+        position: absolute
+        left: 10px
+        top: 50%  
+        transform: translateY(-50%) 
+        margin-top: -1px
+        z-index: 2 
+        
+    &__field
+        padding-left: 40px 
+        border-bottom: 1px dotted transparent
+        position: relative
+        
+        &._open
+            border-radius: $bRadMain $bRadMain 0 0
+            border-color: #c5c5c5  
+            background: #FFF 
+                
+// Autocomplete result
+.auto-result
+    width: 100% 
+    height: auto
+    position: absolute
+    left: 0
+    top: 41px
+    z-index: 5 
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.19)
+    opacity: 0
+    visibility: hidden
+    
+    &._open
+        opacity: 1
+        visibility: visible 
+    
+    ul
+        margin: 0
+        padding: 0
+        list-style: none
+        
+        li
+            margin: 0
+            padding: 8px 15px 8px 40px
+            background: #FFF 
+            cursor: pointer
+            border-bottom: 1px dotted #c5c5c5
+            
+            &:hover
+                background: #b9e8b2 
+                
+                .iconic
+                    opacity: 1 
+                
+            &:last-child
+                border-bottom: none  
+                border-radius: 0 0 $bRadMain $bRadMain
+
+        .iconic
+            position: absolute
+            color: $cGreen
+            font-size: 12px  
+            margin: -1px 0 0 -24px
+            opacity: 0
+
+        h5
+            margin: 0
+            font-size: 16px
+            line-height: 22px
+            font-weight: 400 
+            
+            b
+                font-weight: 500    
+            
+        span
+            display: block
+            margin-top: 5px
+            line-height: 12px
+            font-size: 12px
+            color: #8e8e8e 
+            
+            i
+                font-style: normal
+                position: relative
+                
+                &:last-child
+                    &:after
+                        display: none
+                
+                &:after
+                    content: ', '
+                    position: relative
+                    
+.btn-scroll 
+    text-align: center
+    
+    .iconic
+        font-size: 17px
+        color: #FFF  
+        
+.m-block
+    padding: 73px 0 65px 0
+    
+    +max-screen($screenXXS)
+        padding: 40px 0 
+
+    &--dark-grey
+        background: #797979
+        color: #fff
+        
+    &--grey
+        background: #c2c2c2
+        color: #797979        
+        
+    &--white
+        background: #fff
+        color: #070707     
+           
+    &--green
+        background: $cGreen
+        color: #fff
+        
+    &__title
+        text-align: center
+        
+        h2 
+            font-size: 50px
+            line-height: 54px
+            font-weight: 500
+            margin: 0 0 58px 0  
+            
+            +max-screen($screenXXS)
+                font-size: 36px
+                line-height: 38px
+                margin-bottom: 35px 
+                
+        p
+            font-size: 14px
+            line-height: 18px
+            font-weight: 300
+            margin: 0 0 26px 0  
+            
+            +max-screen($screenXXS)
+                margin-bottom: 5px 
+        
+.compare-song
+    max-width: 880px 
+    display: flex
+    justify-content: space-between
+    align-items: center 
+    margin: 0 auto 62px auto
+    position: relative
+    
+    +max-screen($screenXXS)
+        margin-bottom: 30px 
+        flex-direction: column
+    
+    .song
+        
+        &:first-child
+            margin-right: 9% 
+            
+            +max-screen($screenXXS)
+                margin: 0 0 30px 0 
+                
+        +max-screen($screenXXS)
+            margin: 30px 0 0 0 
+
+        &__head
+            justify-content: flex-start
+            
+            
+    .iconic
+        // margin: 0 4.5%
+        font-size: 21px
+        color: #bcbcbc  
+        position: absolute
+        left: 50%
+        top: 50%
+        margin: -10px 0 0 -10px   
+        
+        +max-screen($screenXXS)
+            position: relative
+            margin: 0
+            width: 100%
+            text-align: center
+            left: 0
+            top: 0    
+            
+.compare-btn
+    text-align: center
+    
+.trends
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    
+    +max-screen(460px)
+        flex-direction: column
+        align-items: center
+
+.music-item
+    width: 200px
+    height: 200px
+    margin-bottom: 20px  
+    margin: 0 5.66037% 5.66037% 0
+    display: flex
+    align-items: flex-end
+    background-size: cover
+    background-position: center center
+    text-decoration: none
+    border-radius: $bRadMain
+    overflow: hidden 
+    transition: box-shadow $t150 
+    position: relative
+    
+    &:hover
+        box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.19) 
+        
+        .music-item__title
+            background: $cGreen
+            color: #FFF
+              
+    &:nth-child(4n)
+        margin-right: 0 
+        
+    +max-screen(1000px)
+        &:nth-child(4n)
+            margin-right: 5.66037%
+            
+        &:nth-child(3n)
+            margin-right: 0
+        
+    +max-screen(713px)
+        &:nth-child(3n)
+            margin-right: 5.66037%
+            
+        &:nth-child(2n)
+            margin-right: 0
+        
+    +max-screen(460px)
+        margin-right: 0 !important 
+        margin-bottom: 10% !important 
+        
+    &__img 
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%    
+        border-radius: 0 0 20px 20px 
+        
+    &__title
+        font-size: 17px
+        color: #797979
+        padding: 3px 10px 4px
+        text-align: center
+        background: #e3e3e3  
+        z-index: 2 
+        width: 100% 
+        border-radius: 0 0 $bRadMain $bRadMain
+        transition: color $t150, background $t150  
+        
+@-moz-document url-prefix()
+    .music-item
+        margin-bottom: 25px
+          
+
+.listners
+    padding-top: 50px
+    
+    +max-screen($screen2)
+        padding-top: 10px
+
+    &__content
+        max-width: 1060px
+        margin: 0 auto 70px auto 
+        display: flex
+        justify-content: space-between
+        
+        +max-screen($screen1)
+            flex-wrap: wrap 
+            
+        +max-screen($screen2)
+            margin-bottom: 40px 
+        
+    &__bottom
+        text-align: center
+
+    &__important
+        font-size: 30px
+        font-weight: 500
+        margin-bottom: 33px   
+        color: $cGreen 
+        
+
+
+.listner-item
+    margin-right: 60px
+    
+    &:last-child
+        margin-right: 0 
+    
+    +max-screen($screen1)
+        width: 43% 
+        margin-right: 6% 
+        margin-bottom: 10% 
+        
+        &:last-child
+            margin-right: 0 
+        
+        &:nth-child(2n)
+            margin-right: 0
+    
+    +max-screen($screen2)
+        width: 100% 
+        margin-right: 0 !important
+        margin-bottom: 50px !important 
+        
+        &:last-child
+            margin-bottom: 0 !important 
+        
+    &__img
+        text-align: center
+        margin-bottom: 60px 
+        
+        +max-screen($screen1)
+            margin-bottom: 30px 
+            
+        +max-screen($screen2)
+            margin-bottom: 15px 
+        
+        img
+            max-width: 100%
+            
+        .iconic
+            font-size: 62px
+            line-height: 62px 
+            color: $cGreen 
+            
+    &__content
+
+
+    &__title
+        font-size: 24px
+        line-height: 28px
+        font-weight: 500
+        margin: 0 0 18px 0
+        
+    &__text
+        font-weight: 300
+         
+        p
+            margin: 0 0 15px 0
+            
+            &:last-child
+                margin-bottom: 0 
+
+.soc-block
+    text-align: center
+    
+    &__title
+        font-size: 29px
+        line-height: 34px
+        font-weight: 500
+        margin: 0 0 25px 0
+        
+    &__items
+        display: flex
+        justify-content: center
+        max-width: 305px
+        margin: 0 auto  
+        
+    &__item
+        margin-right: 15px
+        text-decoration: none
+        
+        &:last-child
+            margin-right: 0 
+            
+        &:hover
+            .iconic
+                color: #FFF 
+        
+        .iconic
+            font-size: 64px
+            line-height: 64px 
+            color: #8cd980
+            transition: color $t150
+            overflow: visible
+            
+            +max-screen($screenXXS)
+                font-size: 54px
+                line-height: 54px  

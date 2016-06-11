@@ -1,0 +1,245 @@
+.page--result
+    .page-content
+        display: flex
+        max-width: $screenMax
+        margin: 0 auto
+        width: 100%
+        
+
+.result-wr
+    display: flex
+    width: 100% 
+    
+    +max-screen($screenXS)
+        flex-wrap: wrap 
+    
+.result-main
+    width: 32.8125%
+    background: #797979
+    padding: 10px
+    
+    +max-screen($screenM)
+        width: 50% 
+        
+    +max-screen($screenXS)
+        width: 100% 
+        height: auto !important 
+    
+    &__song
+        &._full
+            .result-main__edit
+                display: block
+
+    &__search
+        margin-bottom: 10px 
+        
+    &__edit
+        text-align: center
+        padding: 27px $xsPad 43px $xsPad
+        display: none
+        
+        +max-screen($screenM)
+            padding: 15px $xsPad
+        
+        .btn
+            font-size: 16px
+             
+            .iconic
+                margin-right: 6px 
+                margin-top: 2px
+                
+                &:after
+                    top: 2px
+    
+.result-all
+    width: 67.1875%
+    background: #c2c2c2  
+    position: relative
+    overflow: hidden
+    transition: background $t300 
+    
+    +max-screen($screenM)
+        width: 50% 
+        padding-bottom: 10px 
+        
+    +max-screen($screenXS)
+        width: 100% 
+        
+    &._open
+        +max-screen($screenM)
+            background: #FFF 
+
+.result-all-inner
+
+    +max-screen($screenXS)
+        display: block
+
+    .result-all._open &
+        +max-screen($screenXS)
+            display: none
+        
+.result-all-popup
+    position: absolute
+    z-index: 5 
+    left: 0 
+    top: 0
+    background: #fff
+    width: 100%
+    transform: translateX(100%) 
+    transition: transform $t300 
+    
+    +max-screen($screenXS)
+        height: auto !important
+        position: relative 
+        display: none
+        transform: translateX(0%) 
+
+    .result-all._open &
+        transform: translateX(0%) 
+        
+        +max-screen($screenXS)
+            display: block
+        
+    .cols
+        padding: 0 0 0 $smallPad
+        align-items: stretch
+        flex-wrap: nowrap 
+        height: 100% 
+        
+        +max-screen($screenM)
+            padding: 0 0 0 $smallPad
+        
+        +max-screen($screenXS)
+            padding: 0 
+    .song
+        border-radius: 0 
+        width: 47.61904%
+        margin-right: 0
+        flex-shrink: 0
+        
+        +max-screen($screenM)
+            width: 100% 
+          
+        
+    .song-info
+        background: #C2C2C2 
+        width: 100% 
+        padding: 28px 20px 0 32px
+        
+        +max-screen($screenM)
+            background: #FFF 
+            padding: 20px 20px 0 20px 
+        
+        
+.result-subsearch
+    background: $cGreen 
+    min-height: 60px 
+    align-items: center
+    padding: $xsPad $smallPad
+    
+    +max-screen($screenM)
+        min-height: 0  
+        padding: $xsPad
+        
+    .col-one
+
+        +max-screen($screenM)
+            margin-bottom: 10px
+            
+            &:last-child    
+                margin-bottom: 0 
+                    
+        &:first-child
+            display: flex
+            flex-wrap: wrap 
+            justify-content: space-between
+            
+    &__text
+        opacity: 0 
+        
+        &._active
+            opacity: 1 
+        
+        i
+            font-style: normal
+            
+    &__filters
+        font-size: 12px
+         
+        span
+            color: #fff 
+        
+.result-tags
+    background: #e3e3e3
+    padding: $xsPad $smallPad 0
+    justify-content: space-between
+    display: none
+    
+    &._show
+        display: flex
+    
+    +max-screen($screenM)
+        padding: $xsPad $xsPad 0
+    
+    .btn
+        margin-bottom: 10px 
+        
+    &__list
+        display: flex
+        flex-wrap: wrap 
+        
+        .btn
+            margin-right: 10px
+    
+.result-songs
+    padding: $smallPad
+    // padding: $smallPad 0 $smallPad $smallPad
+    // height: 665px 
+    // overflow: hidden
+    
+    position: relative
+
+    &:after
+        content: "" 
+        position: absolute 
+        width: 100%
+        height: 100%
+        background: #fff   
+        left: 0
+        top: 0
+        opacity: 0
+        visibility: hidden   
+        transition: opacity $t150, visibility $t150  
+        
+            
+    body._popup-anim &
+        &:after
+            opacity: .5
+            visibility: visible 
+    
+    
+    +max-screen($screenM)
+        padding: $xsPad
+        
+    .mCSB_container
+        margin-right: 20px
+
+        +max-screen($screenM)
+            margin-right: 0 
+        
+    .mCSB_scrollTools
+        top: 5%
+        right: 2px 
+        height: 90%  
+
+    .song
+        margin-bottom: 2.325581%
+        position: relative
+        
+        
+        +max-screen($screenM)
+            margin-bottom: 20px 
+            
+            &:last-child    
+                margin-bottom: 0 
+                
