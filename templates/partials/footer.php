@@ -1,8 +1,10 @@
 <footer class="page-footer">
     <div class="page-inner">
-        <a href="#!" class="logo logo--footer">
-            <?php include 'partials/logo-svg.php'; ?>
-        </a>
+        <div class="page-footer__logo">
+            <a href="#!">
+                <?php include 'partials/logo-text.php'; ?>
+            </a>
+        </div>
         <div class="page-footer__copy">
             <span>
                 © 2016 Musimatix Inc. <br>

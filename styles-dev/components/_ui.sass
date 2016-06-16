@@ -1,0 +1,164 @@
+.ui-btn
+    display: inline-block
+    box-sizing: border-box
+    vertical-align: middle
+    text-align: center
+    cursor: pointer
+    border: none
+    background: transparent
+    margin: 0
+    outline: 0
+    white-space: nowrap
+    text-decoration: none
+    position: relative
+    user-select: none
+    font-size: 14px 
+    border: 1px solid transparent
+    padding: 3px 11px 2px
+    border-radius: $bRadMain
+    transition: $t150
+    
+    & > SPAN
+        border-bottom: 1px solid transparent
+        padding: 0 0 2px 0 
+        transition: border-color $t300
+        
+    &:hover
+        & > SPAN
+            border-color: transparent
+            
+    .iconic
+        transition: color $t150, transform $t150 
+            
+    &--big
+        padding: 6px 21px 7px        
+            
+    &--small
+        padding: 2px 9px
+        font-size: 12px    
+                
+    &--wide
+        padding: 7px 56px     
+        font-size: 16px 
+        font-weight: 300 
+        
+        +max-screen($screenXXS)
+            padding: 6px 31px 7px 
+        
+    &--green
+        background: $cGreen
+        color: #fff  
+        
+        &:hover
+            background: #1dd700
+            
+        &:active
+            background: #128500
+            
+    &--white
+        background: #e4e4e4
+        color: $cText
+        
+        &.btn--trans
+            background: transparent 
+            color: #fff
+            border-color: #e4e4e4  
+            
+            .iconic
+                color: #e4e4e4 
+                
+            &:hover
+                background: rgba(255, 255, 255, 0.12)
+                
+            &:active
+                background: rgba(0, 0, 0, 0.3)
+                
+                .iconic
+                    color: #FFF 
+                        
+    &--grey
+        background: #ababaa
+        color: #ababaa
+        
+        &.btn--trans
+            background: transparent 
+            color: rgba(0, 0, 0, 0.5)
+            border-color: #ababaa  
+            
+            &:hover
+                background: #fff
+                
+            &:active
+                background: rgba(0, 0, 0, 0.25)
+                
+    &--text
+        color: #676ebb
+        padding: 8px 15px 6px 
+
+        &:hover
+            border-color: #676ebb
+
+        &:active
+            border-color: #8189e2
+            
+    &--brand
+        font-size: 16px
+        font-weight: 300 
+        padding: 9px 16px 8px
+        color: #fff 
+        position: relative
+        border: none
+            
+        &:hover
+            &:before
+                opacity: 0 
+        
+        i
+            font-style: normal 
+            position: relative
+            
+        &:before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            border-radius: $bRadMain
+            opacity: .5      
+            transition: opacity $t150 
+            
+        &--1
+            background: #ff8e00
+            border: none
+            
+            &:before 
+                background: linear-gradient(45deg, rgba(255,207,0,1) 0%,rgba(255,27,0,1) 100%)
+
+        &--2
+            background: #2c94ff
+            
+            &:before 
+                background: linear-gradient(45deg, rgba(192,9,255,1) 0%,rgba(2,175,237,1) 100%)
+            
+.btn-remove-all
+    .iconic
+        margin-right: 5px
+        color: #2b2826
+        opacity: .3
+        
+        &:after
+            top: 1px 
+
+.btn-tag
+    font-size: 14px 
+    padding: 2px 6px 2px 10px     
+
+    .iconic
+        margin-left: 8px
+        font-size: 12px
+        color: #2b2826
+        opacity: .3
+        
+        &:after
+            top: 1px 
