@@ -21,6 +21,7 @@ $D.ready(function($) {
     var $songsTrigger =$('.song__content', $songs);
 
     var popupSpeed = 300;
+    var keywordsMin = 2;
 
     $B.on('click', '.js-page-nav-btn', function (e) {
         e.preventDefault();
@@ -161,7 +162,7 @@ $D.ready(function($) {
 
             clearTimeout(inputTimeout);
 
-            if (valueLenght >= 3) {
+            if (valueLenght >= keywordsMin) {
                 inputTimeout = setTimeout(function(){
                     sendSuggestTitle();
                 },200);
@@ -185,7 +186,7 @@ $D.ready(function($) {
 
             clearTimeout(keyInputTimeout);
 
-            if (valueLenght >= 3) {
+            if (valueLenght >= keywordsMin) {
                 keyInputTimeout = setTimeout(function(){
                     openKeySeacrchRes();
                     // sendKeywordsForTags();
@@ -538,18 +539,24 @@ function responseToServer(options) {
         type: options.type || 'POST',
         data: options.data || '',
         dataType: options.dataType || 'json',
+        contentType: options.contentType || 'application/json',
         error: options.error || function() {},
         success: options.success || function() {}
     }, options );
 
 
     $.ajax({
+        // beforeSend: function(xhrObj){
+        //     xhrObj.setRequestHeader("Content-Type","application/json");
+        //     xhrObj.setRequestHeader("Accept","application/json");
+        // },
         url: settings.url,
         type: settings.type,
-        data: settings.data,
+        data: JSON.stringify(settings.data),
         dataType: settings.dataType,
         error: settings.error,
-        success: settings.success
+        success: settings.success,
+        // contentType: settings.contentType
     });
 }
 
