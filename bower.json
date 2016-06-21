@@ -15,6 +15,7 @@
     "magnific-popup": "~1.0.0",
     "modernizr": "~2.8.3",
     "malihu-custom-scrollbar-plugin": "latest",
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "autosize": "~3.0.15"
   }
 }

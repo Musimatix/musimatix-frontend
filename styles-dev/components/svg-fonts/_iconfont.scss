@@ -34,50 +34,59 @@
     @if $filename == arr-down {
     $char: "\E002";
 }
-    @if $filename == cross {
+    @if $filename == arr-left {
     $char: "\E003";
 }
-    @if $filename == dots {
+    @if $filename == arr-right {
     $char: "\E004";
 }
-    @if $filename == equal {
+    @if $filename == cross {
     $char: "\E005";
 }
-    @if $filename == filter {
+    @if $filename == dots {
     $char: "\E006";
 }
-    @if $filename == heart {
+    @if $filename == equal {
     $char: "\E007";
 }
-    @if $filename == mic {
+    @if $filename == filter {
     $char: "\E008";
 }
-    @if $filename == note {
+    @if $filename == heart {
     $char: "\E009";
 }
-    @if $filename == pen {
+    @if $filename == mic {
     $char: "\E00A";
 }
-    @if $filename == piano {
+    @if $filename == note {
     $char: "\E00B";
 }
-    @if $filename == plus {
+    @if $filename == pen {
     $char: "\E00C";
 }
-    @if $filename == s-fb {
+    @if $filename == piano {
     $char: "\E00D";
 }
-    @if $filename == s-g {
+    @if $filename == plus-sq {
     $char: "\E00E";
 }
-    @if $filename == s-tw {
+    @if $filename == plus {
     $char: "\E00F";
 }
-    @if $filename == s-v {
+    @if $filename == s-fb {
     $char: "\E010";
 }
-    @if $filename == search {
+    @if $filename == s-g {
     $char: "\E011";
+}
+    @if $filename == s-tw {
+    $char: "\E012";
+}
+    @if $filename == s-v {
+    $char: "\E013";
+}
+    @if $filename == search {
+    $char: "\E014";
 }
 
 @return $char;
@@ -96,6 +105,12 @@
 }
 .iconic--arr-down {
     @include iconic(arr-down);
+}
+.iconic--arr-left {
+    @include iconic(arr-left);
+}
+.iconic--arr-right {
+    @include iconic(arr-right);
 }
 .iconic--cross {
     @include iconic(cross);
@@ -123,6 +138,9 @@
 }
 .iconic--piano {
     @include iconic(piano);
+}
+.iconic--plus-sq {
+    @include iconic(plus-sq);
 }
 .iconic--plus {
     @include iconic(plus);

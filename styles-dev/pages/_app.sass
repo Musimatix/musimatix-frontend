@@ -1,0 +1,297 @@
+.page--app
+    background: #000b22
+    padding-bottom: 50px 
+        
+    .page-header
+        
+    .page-content
+
+.app
+
+    &._hide-placeholder
+        textarea::-webkit-input-placeholder
+            color: transparent
+
+        textarea::-ms-input-placeholder
+            color: transparent
+
+        textarea::-moz-placeholder
+            color: transparent
+            opacity: 1
+
+        textarea::-moz-placeholder
+            color: transparent
+            opacity: 1
+
+
+    &._state-lyrics-edit
+
+        .js-rhytm-song-block,
+        .js-edit-lyr-btn,
+        .js-find-lyr-match-btn,
+        .js-searching-block
+            display: none
+            
+        .js-lyr-new-btn
+            border-radius: $bRadMain 0 0 0 !important
+            background: $cGreen
+            
+            .iconic
+                color: #FFF 
+            
+            &:hover
+                background: $cLGreen 
+                
+    &._state-rhytm-edit
+
+        .js-edit-song-block,
+        .js-edit-rhytm-btn,
+        .js-searching-block
+            display: none
+
+        .js-find-lyr-match-btn
+        .js-edit-lyr-btn,
+            display: flex
+            
+        .js-rhytm-song-block
+            display: block   
+                         
+    &._state-searching
+
+        .js-edit-song-block,
+        .js-edit-rhytm-btn,
+        .js-rhytm-song-block,
+        .js-edit-lyr-btn,
+        .js-find-lyr-match-btn
+            display: none
+        
+        .js-lyr-new-btn
+            border-radius: $bRadMain 0 0 0 !important 
+
+        .js-search-lyr-tab-btn
+            background: $cBlue
+            cursor: default
+            
+            .iconic
+                color: #FFF 
+            
+            &:hover
+                background: $cBlue
+                
+        .a-block__inner
+            min-height: 0 
+            
+        .search-input__field
+            padding-left: 15px 
+    
+.a-block
+    margin: 0 auto 
+    max-width: 830px
+    padding: 0 50px 
+    position: relative
+    
+    &__controls
+        & > div
+            position: absolute
+            top: 0
+            
+            &._left
+                left: 0
+                position: absolute
+                
+                .a-control
+                    &:first-child
+                        border-radius: $bRadMain 0 0 0  
+                
+                    &:last-child
+                        border-radius: 0 0 0 $bRadMain
+                        
+                    &--one
+                        border-radius: $bRadMain 0 0 $bRadMain !important
+                
+            &._right
+                right: 0 
+                
+                .a-control
+                    &:first-child
+                        border-radius: 0 $bRadMain 0 0 
+                
+                    &:last-child
+                        border-radius: 0 0 $bRadMain 0
+                
+                    .iconic
+                        margin-left: 10px 
+                        
+                    &--one
+                        border-radius: 0 $bRadMain $bRadMain 0 !important
+             
+    &__content
+        position: relative
+        
+    &__head
+        background: #e1e1e1
+        border-radius: $bRadBig $bRadBig 0 0
+        text-align: center
+        padding: 17px 0
+        line-height: 14px 
+        font-weight: 500
+        text-shadow: 0px 1px rgba(255, 255, 255, 0.5)
+        border-bottom: 1px solid #d6d6d6  
+        
+    &__inner
+        position: relative
+        background: #fff 
+        border-radius: 0 0 $bRadBig $bRadBig 
+        min-height: 150px
+        
+        ul 
+            margin: 0
+             
+        .ui-plus-btn
+            position: absolute
+            left: 50%
+            bottom: -14px
+            transform: translateX(-50%)    
+
+.a-control
+    background: transparent
+    border: none
+    border-radius: 0
+    background: #333c4e
+    line-height: 10px
+    font-size: 14px  
+    text-decoration: none
+    padding: 0 
+    width: 60px
+    height: 50px
+    display: flex
+    justify-content: center
+    align-items: center 
+    // transition-duration: $t150  
+    // transition-property: background
+    
+    .iconic
+        color: #999ea7 
+        line-height: 14px
+        font-size: 14px  
+        margin-left: -10px 
+        // transition-duration: $t150  
+        // transition-property: color
+        
+        &--plus-sq
+            font-size: 15px
+                     
+        &--search
+            font-size: 20px                      
+
+        &--arr-right
+            font-size: 17px
+             
+        &--arr-left
+            font-size: 17px 
+            
+    &:hover
+        background: #5d6676
+        
+        .iconic
+            color: #fff 
+        
+    &--green
+        background: $cGreen 
+
+        .iconic
+            color: #fff       
+            
+        &:hover
+            background: $cLGreen 
+              
+    &--orange
+        background: $cOrange 
+
+        .iconic
+            color: #fff 
+            
+        &:hover
+            background: $cLOrange 
+            
+.song-edit-block
+    text-align: center
+    
+
+    .song-edit-input
+        &:last-child
+            .ui-input-row
+                border: none 
+                border-radius: 0 0 $bRadBig $bRadBig
+                
+
+.rhytm-edit-input
+    font-size: 18px
+    width: 100%
+    display: block 
+    padding: 15px 20px 3px
+    font-size: 18px
+    line-height: 51px       
+    border-bottom: 1px solid #f2f2f2   
+    user-select: none
+    
+    &:last-child
+        border-bottom: none
+    
+.rm
+    transition-duration: $t150
+    transition-property: background
+    padding: 5px 0
+    position: relative
+    
+    &:before
+        content: ''
+        position: absolute
+        top: -14px
+        left: 50%
+        transform: translateX(-50%)  
+    
+    &:first-child
+        // padding-left: 5px
+        
+    &:last-child
+        // padding-right: 5px
+
+    &--up
+        background: $cLBlue
+        cursor: pointer
+        
+        &:before
+            width: 8px
+            height: 9px
+            background: url(../images/rm-up.png)  
+        
+        &:hover
+            background: #ade7ff 
+
+    &--down
+        background: $cLDark
+        cursor: pointer
+        
+        &:before
+            width: 12px
+            height: 7px
+            top: -13px 
+            background: url(../images/rm-down.png)  
+        
+        &:hover
+            background: #d8d8d8
+        
+    &--quest
+        background: $cLRed
+        cursor: pointer
+        
+        &:before
+            content: '?'
+            color: $cLRed
+            font-size: 13px
+            font-weight: 500  
+            line-height: 10px 
+        
+        &:hover
+            background: #ffb0b0

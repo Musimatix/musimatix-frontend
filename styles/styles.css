@@ -122,105 +122,123 @@
   color: #000;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
 .iconic--ar-left:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
 .iconic--arr-down:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
-.iconic--cross:after {
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--arr-left:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
-.iconic--dots:after {
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--arr-right:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
-.iconic--equal:after {
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--cross:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
-.iconic--filter:after {
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--dots:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
-.iconic--heart:after {
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--equal:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
-.iconic--mic:after {
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--filter:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
-.iconic--note:after {
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--heart:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
-.iconic--pen:after {
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--mic:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
-.iconic--piano:after {
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--note:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
-.iconic--plus:after {
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--pen:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
-.iconic--s-fb:after {
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--piano:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
-.iconic--s-g:after {
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--plus-sq:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
-.iconic--s-tw:after {
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--plus:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
-.iconic--s-v:after {
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--s-fb:after {
   content: "";
   position: relative;
 }
 
-/* line 87, ../styles-dev/components/svg-fonts/_iconfont.scss */
-.iconic--search:after {
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--s-g:after {
   content: "";
+  position: relative;
+}
+
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--s-tw:after {
+  content: "";
+  position: relative;
+}
+
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--s-v:after {
+  content: "";
+  position: relative;
+}
+
+/* line 96, ../styles-dev/components/svg-fonts/_iconfont.scss */
+.iconic--search:after {
+  content: "";
   position: relative;
 }
 
@@ -233,12 +251,12 @@
 
 /* line 9, ../styles-dev/components/_base.sass */
 ::-moz-selection {
-  background: #00a2e5;
+  background: #15abff;
   color: #fff;
   text-shadow: none;
 }
 ::selection {
-  background: #00a2e5;
+  background: #15abff;
   color: #fff;
   text-shadow: none;
 }
@@ -276,73 +294,83 @@ body {
   background: #797979;
 }
 
-/* line 50, ../styles-dev/components/_base.sass */
+/* line 49, ../styles-dev/components/_base.sass */
 INPUT,
-BUTTON {
+BUTTON,
+textarea {
   outline: none;
 }
 /* line 54, ../styles-dev/components/_base.sass */
 INPUT:focus,
-BUTTON:focus {
+BUTTON:focus,
+textarea:focus {
   outline: none;
 }
 
 /* line 57, ../styles-dev/components/_base.sass */
+button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* line 63, ../styles-dev/components/_base.sass */
 svg {
   overflow: visible;
 }
 
-/* line 60, ../styles-dev/components/_base.sass */
+/* line 66, ../styles-dev/components/_base.sass */
 .page-inner {
   padding: 0 10px;
 }
 @media screen and (max-width: 480px) {
-  /* line 60, ../styles-dev/components/_base.sass */
+  /* line 66, ../styles-dev/components/_base.sass */
   .page-inner {
     padding: 0 20px;
   }
 }
 
-/* line 66, ../styles-dev/components/_base.sass */
+/* line 72, ../styles-dev/components/_base.sass */
 .p-inner {
   padding: 0 10px;
   max-width: 1280px;
   margin: 0 auto;
 }
 @media screen and (max-width: 480px) {
-  /* line 66, ../styles-dev/components/_base.sass */
+  /* line 72, ../styles-dev/components/_base.sass */
   .p-inner {
     padding: 0 20px;
   }
 }
 
-/* line 75, ../styles-dev/components/_base.sass */
+/* line 81, ../styles-dev/components/_base.sass */
 .page {
   min-height: 100%;
   margin-bottom: -250px;
 }
-/* line 79, ../styles-dev/components/_base.sass */
+/* line 85, ../styles-dev/components/_base.sass */
 .page:after {
   content: "";
   display: block;
   height: 250px;
 }
-/* line 84, ../styles-dev/components/_base.sass */
+/* line 90, ../styles-dev/components/_base.sass */
 .page-content {
   height: 100%;
 }
 
-/* line 87, ../styles-dev/components/_base.sass */
+/* line 93, ../styles-dev/components/_base.sass */
 .page-footer {
   height: 250px;
 }
 
-/* line 92, ../styles-dev/components/_base.sass */
+/* line 98, ../styles-dev/components/_base.sass */
 .h1, .h2, .h3, .h4, .h5 {
   margin: 0;
 }
 
-/* line 95, ../styles-dev/components/_base.sass */
+/* line 101, ../styles-dev/components/_base.sass */
 .h1 {
   font-size: 50px;
   line-height: 52px;
@@ -433,7 +461,7 @@ svg {
 }
 /* line 48, ../styles-dev/components/_ui.sass */
 .ui-btn--green {
-  background: #18b300;
+  background: #28a70a;
   color: #fff;
 }
 /* line 52, ../styles-dev/components/_ui.sass */
@@ -580,6 +608,39 @@ svg {
 /* line 163, ../styles-dev/components/_ui.sass */
 .btn-tag .iconic:after {
   top: 1px;
+}
+
+/* line 167, ../styles-dev/components/_ui.sass */
+.ui-input-row {
+  width: 100%;
+  display: block;
+  border: none;
+  resize: none;
+  padding: 14px 20px;
+  font-size: 18px;
+  line-height: 21px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+/* line 177, ../styles-dev/components/_ui.sass */
+.ui-plus-btn {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 100%;
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  -webkit-transition-property: background;
+          transition-property: background;
+  background: #28a70a;
+}
+/* line 185, ../styles-dev/components/_ui.sass */
+.ui-plus-btn .iconic {
+  color: #fff;
+}
+/* line 190, ../styles-dev/components/_ui.sass */
+.ui-plus-btn:hover {
+  background: #27cc00;
 }
 
 /* line 1, ../styles-dev/components/_blocks.sass */
@@ -751,12 +812,12 @@ svg {
 }
 /* line 121, ../styles-dev/components/_blocks.sass */
 .song__subtitle {
-  color: #18b300;
+  color: #28a70a;
   margin: 0;
 }
 /* line 125, ../styles-dev/components/_blocks.sass */
 .song__subtitle a {
-  color: #18b300;
+  color: #28a70a;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   -webkit-transition: border-color 150ms;
@@ -785,7 +846,7 @@ svg {
 /* line 146, ../styles-dev/components/_blocks.sass */
 .song__text i {
   font-style: normal;
-  color: #00a2e5;
+  color: #15abff;
 }
 /* line 150, ../styles-dev/components/_blocks.sass */
 .song__footer {
@@ -832,7 +893,7 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #18b300;
+  background: #28a70a;
   min-height: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -889,7 +950,7 @@ svg {
 
 /* line 229, ../styles-dev/components/_blocks.sass */
 .form-row__input {
-  padding: 11px 15px;
+  padding: 16px 15px;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.6);
   border: none;
@@ -949,7 +1010,7 @@ svg {
   height: auto;
   position: absolute;
   left: 0;
-  top: 41px;
+  top: 51px;
   z-index: 5;
   box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.19);
   opacity: 0;
@@ -990,7 +1051,7 @@ svg {
 /* line 313, ../styles-dev/components/_blocks.sass */
 .auto-result ul .iconic {
   position: absolute;
-  color: #18b300;
+  color: #28a70a;
   font-size: 12px;
   margin: -1px 0 0 -24px;
   opacity: 0;
@@ -1066,7 +1127,7 @@ svg {
 }
 /* line 373, ../styles-dev/components/_blocks.sass */
 .m-block--green {
-  background: #18b300;
+  background: #28a70a;
   color: #fff;
 }
 /* line 377, ../styles-dev/components/_blocks.sass */
@@ -1226,7 +1287,7 @@ svg {
 }
 /* line 474, ../styles-dev/components/_blocks.sass */
 .music-item:hover .music-item__title {
-  background: #18b300;
+  background: #28a70a;
   color: #FFF;
 }
 /* line 478, ../styles-dev/components/_blocks.sass */
@@ -1332,7 +1393,7 @@ svg {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 33px;
-  color: #18b300;
+  color: #28a70a;
 }
 
 /* line 552, ../styles-dev/components/_blocks.sass */
@@ -1396,7 +1457,7 @@ svg {
 .listner-item__img .iconic {
   font-size: 62px;
   line-height: 62px;
-  color: #18b300;
+  color: #28a70a;
 }
 /* line 598, ../styles-dev/components/_blocks.sass */
 .listner-item__title {
@@ -1472,24 +1533,27 @@ svg {
 
 /* line 1, ../styles-dev/pages/partials/_header.sass */
 .page-header {
-  background: #131313;
-  height: 60px;
+  height: 90px;
   position: relative;
   z-index: 2;
 }
-/* line 7, ../styles-dev/pages/partials/_header.sass */
-.page-header .page-inner {
+/* line 6, ../styles-dev/pages/partials/_header.sass */
+.page-header .p-inner {
   height: 100%;
   width: 100%;
-  max-width: 1280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 25px;
-  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 13, ../styles-dev/pages/partials/_header.sass */
+.page-header .p-inner .logo {
+  margin-top: 10px;
 }
 
 /* line 1, ../styles-dev/pages/partials/_footer.sass */
@@ -2066,7 +2130,7 @@ svg {
 
 /* line 134, ../styles-dev/pages/_result.sass */
 .result-subsearch {
-  background: #18b300;
+  background: #28a70a;
   min-height: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2220,4 +2284,356 @@ body._popup-anim .result-songs:after {
   .result-songs .song:last-child {
     margin-bottom: 0;
   }
+}
+
+/* line 1, ../styles-dev/pages/_app.sass */
+.page--app {
+  background: #000b22;
+  padding-bottom: 50px;
+}
+
+/* line 12, ../styles-dev/pages/_app.sass */
+.app._hide-placeholder textarea::-webkit-input-placeholder {
+  color: transparent;
+}
+/* line 15, ../styles-dev/pages/_app.sass */
+.app._hide-placeholder textarea::-ms-input-placeholder {
+  color: transparent;
+}
+/* line 18, ../styles-dev/pages/_app.sass */
+.app._hide-placeholder textarea::-moz-placeholder {
+  color: transparent;
+  opacity: 1;
+}
+/* line 22, ../styles-dev/pages/_app.sass */
+.app._hide-placeholder textarea::-moz-placeholder {
+  color: transparent;
+  opacity: 1;
+}
+/* line 29, ../styles-dev/pages/_app.sass */
+.app._state-lyrics-edit .js-rhytm-song-block,
+.app._state-lyrics-edit .js-edit-lyr-btn,
+.app._state-lyrics-edit .js-find-lyr-match-btn,
+.app._state-lyrics-edit .js-searching-block {
+  display: none;
+}
+/* line 35, ../styles-dev/pages/_app.sass */
+.app._state-lyrics-edit .js-lyr-new-btn {
+  border-radius: 5px 0 0 0 !important;
+  background: #28a70a;
+}
+/* line 39, ../styles-dev/pages/_app.sass */
+.app._state-lyrics-edit .js-lyr-new-btn .iconic {
+  color: #FFF;
+}
+/* line 42, ../styles-dev/pages/_app.sass */
+.app._state-lyrics-edit .js-lyr-new-btn:hover {
+  background: #27cc00;
+}
+/* line 47, ../styles-dev/pages/_app.sass */
+.app._state-rhytm-edit .js-edit-song-block,
+.app._state-rhytm-edit .js-edit-rhytm-btn,
+.app._state-rhytm-edit .js-searching-block {
+  display: none;
+}
+/* line 53, ../styles-dev/pages/_app.sass */
+.app._state-rhytm-edit .js-edit-lyr-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 56, ../styles-dev/pages/_app.sass */
+.app._state-rhytm-edit .js-rhytm-song-block {
+  display: block;
+}
+/* line 61, ../styles-dev/pages/_app.sass */
+.app._state-searching .js-edit-song-block,
+.app._state-searching .js-edit-rhytm-btn,
+.app._state-searching .js-rhytm-song-block,
+.app._state-searching .js-edit-lyr-btn,
+.app._state-searching .js-find-lyr-match-btn {
+  display: none;
+}
+/* line 68, ../styles-dev/pages/_app.sass */
+.app._state-searching .js-lyr-new-btn {
+  border-radius: 5px 0 0 0 !important;
+}
+/* line 71, ../styles-dev/pages/_app.sass */
+.app._state-searching .js-search-lyr-tab-btn {
+  background: #15abff;
+  cursor: default;
+}
+/* line 75, ../styles-dev/pages/_app.sass */
+.app._state-searching .js-search-lyr-tab-btn .iconic {
+  color: #FFF;
+}
+/* line 78, ../styles-dev/pages/_app.sass */
+.app._state-searching .js-search-lyr-tab-btn:hover {
+  background: #15abff;
+}
+/* line 81, ../styles-dev/pages/_app.sass */
+.app._state-searching .a-block__inner {
+  min-height: 0;
+}
+/* line 84, ../styles-dev/pages/_app.sass */
+.app._state-searching .search-input__field {
+  padding-left: 15px;
+}
+
+/* line 87, ../styles-dev/pages/_app.sass */
+.a-block {
+  margin: 0 auto;
+  max-width: 830px;
+  padding: 0 50px;
+  position: relative;
+}
+/* line 94, ../styles-dev/pages/_app.sass */
+.a-block__controls > div {
+  position: absolute;
+  top: 0;
+}
+/* line 98, ../styles-dev/pages/_app.sass */
+.a-block__controls > div._left {
+  left: 0;
+  position: absolute;
+}
+/* line 103, ../styles-dev/pages/_app.sass */
+.a-block__controls > div._left .a-control:first-child {
+  border-radius: 5px 0 0 0;
+}
+/* line 106, ../styles-dev/pages/_app.sass */
+.a-block__controls > div._left .a-control:last-child {
+  border-radius: 0 0 0 5px;
+}
+/* line 109, ../styles-dev/pages/_app.sass */
+.a-block__controls > div._left .a-control--one {
+  border-radius: 5px 0 0 5px !important;
+}
+/* line 112, ../styles-dev/pages/_app.sass */
+.a-block__controls > div._right {
+  right: 0;
+}
+/* line 116, ../styles-dev/pages/_app.sass */
+.a-block__controls > div._right .a-control:first-child {
+  border-radius: 0 5px 0 0;
+}
+/* line 119, ../styles-dev/pages/_app.sass */
+.a-block__controls > div._right .a-control:last-child {
+  border-radius: 0 0 5px 0;
+}
+/* line 122, ../styles-dev/pages/_app.sass */
+.a-block__controls > div._right .a-control .iconic {
+  margin-left: 10px;
+}
+/* line 125, ../styles-dev/pages/_app.sass */
+.a-block__controls > div._right .a-control--one {
+  border-radius: 0 5px 5px 0 !important;
+}
+/* line 128, ../styles-dev/pages/_app.sass */
+.a-block__content {
+  position: relative;
+}
+/* line 131, ../styles-dev/pages/_app.sass */
+.a-block__head {
+  background: #e1e1e1;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  padding: 17px 0;
+  line-height: 14px;
+  font-weight: 500;
+  text-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #d6d6d6;
+}
+/* line 141, ../styles-dev/pages/_app.sass */
+.a-block__inner {
+  position: relative;
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+  min-height: 150px;
+}
+/* line 147, ../styles-dev/pages/_app.sass */
+.a-block__inner ul {
+  margin: 0;
+}
+/* line 150, ../styles-dev/pages/_app.sass */
+.a-block__inner .ui-plus-btn {
+  position: absolute;
+  left: 50%;
+  bottom: -14px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* line 156, ../styles-dev/pages/_app.sass */
+.a-control {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  background: #333c4e;
+  line-height: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0;
+  width: 60px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 173, ../styles-dev/pages/_app.sass */
+.a-control .iconic {
+  color: #999ea7;
+  line-height: 14px;
+  font-size: 14px;
+  margin-left: -10px;
+}
+/* line 181, ../styles-dev/pages/_app.sass */
+.a-control .iconic--plus-sq {
+  font-size: 15px;
+}
+/* line 184, ../styles-dev/pages/_app.sass */
+.a-control .iconic--search {
+  font-size: 20px;
+}
+/* line 187, ../styles-dev/pages/_app.sass */
+.a-control .iconic--arr-right {
+  font-size: 17px;
+}
+/* line 190, ../styles-dev/pages/_app.sass */
+.a-control .iconic--arr-left {
+  font-size: 17px;
+}
+/* line 193, ../styles-dev/pages/_app.sass */
+.a-control:hover {
+  background: #5d6676;
+}
+/* line 196, ../styles-dev/pages/_app.sass */
+.a-control:hover .iconic {
+  color: #fff;
+}
+/* line 199, ../styles-dev/pages/_app.sass */
+.a-control--green {
+  background: #28a70a;
+}
+/* line 202, ../styles-dev/pages/_app.sass */
+.a-control--green .iconic {
+  color: #fff;
+}
+/* line 205, ../styles-dev/pages/_app.sass */
+.a-control--green:hover {
+  background: #27cc00;
+}
+/* line 208, ../styles-dev/pages/_app.sass */
+.a-control--orange {
+  background: #ff8400;
+}
+/* line 211, ../styles-dev/pages/_app.sass */
+.a-control--orange .iconic {
+  color: #fff;
+}
+/* line 214, ../styles-dev/pages/_app.sass */
+.a-control--orange:hover {
+  background: #ffb400;
+}
+
+/* line 217, ../styles-dev/pages/_app.sass */
+.song-edit-block {
+  text-align: center;
+}
+/* line 223, ../styles-dev/pages/_app.sass */
+.song-edit-block .song-edit-input:last-child .ui-input-row {
+  border: none;
+  border-radius: 0 0 8px 8px;
+}
+
+/* line 228, ../styles-dev/pages/_app.sass */
+.rhytm-edit-input {
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  padding: 15px 20px 3px;
+  font-size: 18px;
+  line-height: 51px;
+  border-bottom: 1px solid #f2f2f2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/* line 238, ../styles-dev/pages/_app.sass */
+.rhytm-edit-input:last-child {
+  border-bottom: none;
+}
+
+/* line 241, ../styles-dev/pages/_app.sass */
+.rm {
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  -webkit-transition-property: background;
+          transition-property: background;
+  padding: 5px 0;
+  position: relative;
+}
+/* line 247, ../styles-dev/pages/_app.sass */
+.rm:before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/* line 260, ../styles-dev/pages/_app.sass */
+.rm--up {
+  background: #c8efff;
+  cursor: pointer;
+}
+/* line 264, ../styles-dev/pages/_app.sass */
+.rm--up:before {
+  width: 8px;
+  height: 9px;
+  background: url(../images/rm-up.png);
+}
+/* line 269, ../styles-dev/pages/_app.sass */
+.rm--up:hover {
+  background: #ade7ff;
+}
+/* line 272, ../styles-dev/pages/_app.sass */
+.rm--down {
+  background: #e1e1e1;
+  cursor: pointer;
+}
+/* line 276, ../styles-dev/pages/_app.sass */
+.rm--down:before {
+  width: 12px;
+  height: 7px;
+  top: -13px;
+  background: url(../images/rm-down.png);
+}
+/* line 282, ../styles-dev/pages/_app.sass */
+.rm--down:hover {
+  background: #d8d8d8;
+}
+/* line 285, ../styles-dev/pages/_app.sass */
+.rm--quest {
+  background: #ffc8c8;
+  cursor: pointer;
+}
+/* line 289, ../styles-dev/pages/_app.sass */
+.rm--quest:before {
+  content: "?";
+  color: #ffc8c8;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 10px;
+}
+/* line 296, ../styles-dev/pages/_app.sass */
+.rm--quest:hover {
+  background: #ffb0b0;
 }
